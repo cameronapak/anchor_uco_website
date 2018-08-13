@@ -1,0 +1,126 @@
+{{ partial "header.html" .}}
+
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/uco_banner.png')">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="site-heading">
+             <h1></h1>
+             {{ with .Site.Params.Description }}<span class="subheading">{{ . }}</span>{{ end }}
+           </div>
+         </div>
+       </div>
+     </div>
+    </header>
+
+    <!-- Mission Statement -->
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 mb-3">
+          <div class="site-heading">
+            <h1>Welcome!</h1>
+            <span class="subheading">We are a para-church organization that is holding fast to the truth of the gospel, strengthening students in their faith, and empowering students to proclaim a message of hope to those around them.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="container section section-dark">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h1>Events</h1>
+            <div class="events justify-content-center">
+              <div class="col-sm-4">
+                <div class="event-card">
+                  <!-- <img src="{{ .Site.BaseURL }}/img/post-sample-image.jpg" width="100%"> -->
+                  <div class="event-title">
+                    Guys Night
+                  </div>
+                  <div class="event-date"><i class="far fa-calendar-alt"></i> Every Thursday</div>
+                  <div class="event-date"><i class="fas fa-map-marker-alt"></i> 100 N University Dr, Edmond, OK 73034</div>
+                  <div class="event-description">
+                    We are bringing the men together for a night of games, fun, Jesus, and brotherhood.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="event-card">
+                  <!-- <img src="{{ .Site.BaseURL }}/img/post-sample-image.jpg" width="100%"> -->
+                  <div class="event-title">
+                    Navigate
+                  </div>
+                  <div class="event-date"><i class="far fa-calendar-alt"></i> Every Thursday</div>
+                  <div class="event-date"><i class="fas fa-map-marker-alt"></i> 100 N University Dr, Edmond, OK 73034</div>
+                  <div class="event-description">
+                    This is a time to dig deeper in the word and in our faith.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="event-card">
+                  <!-- <img src="{{ .Site.BaseURL }}/img/post-sample-image.jpg" width="100%"> -->
+                  <div class="event-title">
+                    Girls Night
+                  </div>
+                  <div class="event-date"><i class="far fa-calendar-alt"></i> Every Thursday</div>
+                  <div class="event-date"><i class="fas fa-map-marker-alt"></i> 100 N University Dr, Edmond, OK 73034</div>
+                  <div class="event-description">
+                    We are bringing the women together for a night of games, fun, Jesus, and womenhood.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="event-card">
+                  <!-- <img src="{{ .Site.BaseURL }}/img/post-sample-image.jpg" width="100%"> -->
+                  <div class="event-title">
+                    Girls Night
+                  </div>
+                  <div class="event-date"><i class="far fa-calendar-alt"></i> Every Thursday</div>
+                  <div class="event-date"><i class="fas fa-map-marker-alt"></i> 100 N University Dr, Edmond, OK 73034</div>
+                  <div class="event-description">
+                    We are bringing the women together for a night of games, fun, Jesus, and womenhood.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="event-card">
+                  <!-- <img src="{{ .Site.BaseURL }}/img/post-sample-image.jpg" width="100%"> -->
+                  <div class="event-title">
+                    Girls Night
+                  </div>
+                  <div class="event-date"><i class="far fa-calendar-alt"></i> Every Thursday</div>
+                  <div class="event-date"><i class="fas fa-map-marker-alt"></i> 100 N University Dr, Edmond, OK 73034</div>
+                  <div class="event-description">
+                    We are bringing the women together for a night of games, fun, Jesus, and womenhood.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {{ $posts := or .Site.Params.PostSummariesFrontPage 4 }}
+          {{ range first $posts (where .Data.Pages "Type" "post") }}
+              {{ .Render "summary"}}
+          {{ end }}
+          <!- - Pager - ->
+          <ul class="pager">
+            <li class="next">
+              <a href="{{ .Site.BaseURL }}/post/">Older Posts &rarr;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  -->
+
+{{ partial "footer.html" .}}
